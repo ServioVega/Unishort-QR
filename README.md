@@ -1,21 +1,43 @@
-UniShort QR — Acortador URL + QR institucional
-Servicio institucional para generar enlaces cortos y códigos QR (UNL).Ficha 3 del banco de proyectos. Stack: Python + FastAPI.
+# 🔗 UniShort QR — Acortador URL + QR Institucional
 
-Requisitos
-Git para Windows 2.x
-Python 3.12 o superior (instalado desde python.org con "Add to PATH")
-Instalación (PowerShell)
-git clone https://github.com/ServioVega/Unishort-QR.gitcd Unishort-QRpy -m venv .venv.venv\Scripts\Activate.ps1pip install -r requirements.txt
+> **Servicio institucional para la generación de enlaces cortos y códigos QR dinámicos (UNL).**  
+> *Ficha 3 del banco de proyectos.*
 
-Ejecución
-uvicorn app.main:app --reload
+---
 
-Documentación interactiva: http://127.0.0.1:8000/docs
-Verificación: http://127.0.0.1:8000/health -> {"status": "ok"}
-Detener el servidor: Ctrl + C
-Estrategia de ramas
-main: estable, protegida (solo Pull Requests)
-develop: integración del equipo
-feature/*: trabajo por tareaCommits: Conventional Commits (feat:, fix:, docs:, chore:).Los Pull Requests se dirigen a develop con revisión cruzada.
-Estructura
-app/ backend FastAPIspecs/ artefactos SDD (spec, plan, tasks).specify/ constitutiontests/ pruebas
+## 🛠️ Stack Tecnológico
+
+![Python](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi&logoColor=white)
+![Git](https://img.shields.io/badge/Git-2.x-F05032?logo=git&logoColor=white)
+
+---
+
+## 📋 Requisitos Previos
+
+Antes de comenzar, asegúrate de contar con los siguientes componentes instalados en tu sistema:
+
+* **Git for Windows:** `2.x` o superior.
+* **Python:** `3.12` o superior *(Asegúrate de marcar la casilla **"Add python.exe to PATH"** durante la instalación desde [python.org](https://www.python.org/))*.
+
+---
+
+## 🚀 Instalación (PowerShell)
+
+Clona el repositorio, configura el entorno virtual e instala las dependencias ejecutando los siguientes comandos:
+
+```powershell
+# 1. Clonar el repositorio
+git clone [https://github.com/ServioVega/Unishort-QR.git](https://github.com/ServioVega/Unishort-QR.git)
+
+# 2. Acceder al directorio del proyecto
+cd Unishort-QR
+
+# 3. Crear el entorno virtual
+py -m venv .venv
+
+# 4. Activar el entorno virtual
+.venv\Scripts\Activate.ps1
+
+# 5. Instalar dependencias
+pip install -r requirements.txt
